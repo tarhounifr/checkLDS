@@ -1,0 +1,35 @@
+ALGORITHM algorithm_htab
+VAR
+    set1,set2,tab : ARRAY OF INTEGER [10];
+    i,j,count : INTEGER ;
+    htab:HASH_TABLE<INTEGER,INTEGER>
+BEGIN
+    i:=0 ;
+    j:=0 ;
+    count:=1
+    set1 :={12,13,6,10};
+    set2 :={13,10,16,15}
+    FOR i FROM 0 TO set1.length-1  DO
+    FOR j FROM 0 TO set2.length-1  DO
+        IF (set1[i]=set2[j])  THEN
+            
+        END_IF THEN
+        
+            count:=count+1;
+
+        htab.insert(set1[i],count) ;
+        else
+         htab.insert(set[i],1]);
+            j:= j+1
+        END_IF
+    END_FOR
+            i:=i+1
+    END_FOR
+        tab:=htab(set[i],get(set[i]))  ;
+ FOR i FROM 0 TO set.lenght-1   DO
+     IF (get(set[i])=2) THEN
+         sum := sum + set([i]);
+     END_IF
+ END_FOR 
+
+END
